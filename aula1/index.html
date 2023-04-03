@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CFBCursos</title>
 </head>
 <body>
     <h1>É TAG display block</h1> <!--vai de h1 até h6-->
@@ -18,6 +18,20 @@
     <p>Curso de <abbr title="Hypertext Markup Language">HTML</abbr></p>
     <address>Autor: Ricardo Caldas de Mello</address> <!--não se aninha, não utiliza h1 e geralmente nem p-->
     <!--adress geralmente é utilizado dentro de footer-->
-
+    <img src="mapabrasil.png" alt="mapa brasil" usemap="#mapabrasil">
+    <map name="mapabrasil">
+        <area shape="poly" coords="" href="#" alt="Minas Gerais"> <!--não tem </area>; não tem display (block ou inline); precisa estar dentro de <map>; coords="340,368 (1a coordenada), 351,347 (2a coordenada)"-->
+    </map>
+    <article>
+        <p>Tag article tem display block. Utilizado para dividir áreas da página - usada como div.</p>
+    </article> <!--maneira clássica <div class"article">-->
+    <aside>
+        <p>TAG aside: Seção dentro da página diretamente relacionado ao conteúdo principal da página, porém separado do conteúdo. Relacionar algo do texto, colocar uma citação.</p>
+        <q>Exemplo de um quotation na TAG aside.</q>
+    </aside>
+    <audio src="Male Zombie Roar.mp3" autoplay controls loop><p>Seu navegador não suporta a TAG áudio.</p></audio> <!--autoplay não funciona com o Chrome-->
+    <p>TAG <b>b - BOLD</b></p>
+    
+    
 </body>
 </html>
