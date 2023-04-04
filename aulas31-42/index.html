@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas 31-42</title>
+    <style>
+        #botoes {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="registro.php" method="post" name="cadastro"> <!--get é feito pela URL (dados explicitos) ou internamente (dados não exibidos pelo HTTP)-->
+        <label for="texto">Nome: </label> <!--etiqueta para o input-->
+        <input type="text" name="texto" id="itexto" maxlength="20" size="22">
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="isenha" maxlength="15" size="17">
+
+        <div id="botoes">
+            <input type="submit" value="Submeter">
+            <input type="reset" value="Limpar"> <!--volta para o value padrão do input text-->
+            <input type="button" value="Botão"> <!--não tem comportamento pré-definido-->
+        </div>
+        <div id="check">
+            <label for="">Esportes:</label>
+            <input type="checkbox" name="fut" id="ifut" value="Futebol">Futebol <!--value: valor que é enviado no PHP-->
+            <input type="checkbox" name="bas" id="ibas" value="Basquete" checked>Basquete
+            <input type="checkbox" name="hand" id="ihand" value="Handbol">Handbol
+        </div>
+        <div id="radio">
+            <label for="radio">Possui carro?</label>
+            <input type="radio" name="carro" id="icarro" value="Sim">Sim
+            <input type="radio" name="carro" id="icarro2" value="Não">Não
+        </div>
+        <div id="time">
+            <label for="">Hora:</label>
+            <input type="time" name="time" id="itime"> <!--required: só deixa enviar se o campo for preenchido-->
+            <label for="">Data:</label>
+            <input type="date" name="date" id="idate">
+            <label for="">Data e Hora:</label>
+            <input type="datetime-local" name="datetime" id="idatetime">
+        </div>
+        <div id="datas">
+            <label for="">Mês: </label>
+            <input type="month" name="mes" id="imes">
+            <label for="">Semana: </label>
+            <input type="week" name="semana" id="isemana">
+        </div>
+        <div id="hidden">
+            <input type="hidden" name="hidden" value="valorescondido"> <!--input hidden passa valor do value ao clicar no submit-->
+        </div>
+        <div id="color">
+            <label for="">Cor: </label>
+            <input type="color" name="cor" id="icor">
+            <label for="">E-mail: </label>
+            <input type="email" name="email" id="iemail">
+            <label for="">Image: </label>
+            <input type="image" src="arrow.png" alt="arrow"> <!--faz envio do formulário através da imagem-->
+        </div>
+    </form>
+</body>
+</html>
