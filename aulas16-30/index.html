@@ -5,11 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulas 16 a 30</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+        }
+
+        .secao {
+            display: flex;
+        }
+
+        .teste {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: lightgray;
+            margin: 5px;
+        }
+
+    </style>
+    <script>
+        function desenha () {
+            var canvas = document.getElementById('desenho')
+            var ctx = canvas.getContext('2d')
+            ctx.fillRect(25,25,100,100)
+        }
+    </script>
 </head>
 <body>
     <button type="submit" form="cadastro" onclick="alert('Clicou')"> <!--types: submit; reset; button; menu || para type button vc configura a ação do botão via JS-->
         Exemplo de botão
     </button>
-    
+
+    <canvas id="desenho" width="200px" height="200px">Seu browser não tem suporte ao elemento Canvas</canvas>
+    <script>desenha()</script>
+
+    <pre> <!--representa um blobo de texto pré formatado - é exibido como foi inserido no código-->
+        <code> <!--representa um trecho de código-->
+int (main){
+    setlocale(LC_ALL,"Portuguese");
+    printf("Código básico em C");
+    system("pause");
+
+    return 0;
+}
+        </code> <!--mais indicado code dentro de pre pois code é contido por fraseado e pre é contido por fluxo mas tem filhos fraseados-->
+    </pre>
+
+    <p>Meu curso favorito é <del cite="#" datetime="04-04-2023T10:00:00">CSS</del><ins>HTML</ins></p> <!--cite para url com motivo de deletar / datetime e cite não aparecem-->
+
+    <details open> <!--open já sai expandido-->
+        <summary>Cursos do Canal</summary> <!--título do details - troca o "saiba mais" pelo texto-->
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JS</p>
+    </details>
+
+    <p><dfn title="Linguagem de marcação">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação.</p> <!--definition - atributo title-->
+
+    <dialog> <!--utiliza open para aparecer-->
+        <p>Teste da TAG diálogo</p> <!--é controlado por JS-->
+    </dialog>
+
+    <div class="secao"> <!--div representa um contêiner genérico para um grupo de elementos-->
+        <div class="teste">
+            <p>Teste 1 div</p>
+        </div>
+        <div class="teste">
+            <p>Teste 2 div</p>
+        </div>
+    </div>
+
+    <!--display block só funciona caso o elemento seja static-->
+    <!--AULA 25 position de div - static, relative, absolut, fixed (posicionado em relação a janela)-->
+    <!--propriedade z-index para colocar na frente ou atras de camadas-->
+
+    <dl> <!--description list-->
+        <dt>HTML</dt> <!--description term - título-->
+        <dd>Linguagem para desenvolvimento web</dd> <!--descrição-->
+    </dl>
+
 </body>
 </html>
