@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <noscript>
+        <p>Boa tarde!</p>
+    </noscript> <!--caso o navgador não suporte JS-->
     <style>
         h1 {
             font-family: 'Raleway', sans-serif;
         }
         hr {
             width: 50%;
+        }
+        iframe {
+            width: 300px;
+            height: 200px;
         }
     </style>
 </head>
@@ -30,6 +37,22 @@
     </header>
     <hr>
     <!--Tag html - filhos head e body - Aula 48-->
-    
+    <p><i>Tag i para indicar uma qualidade de texto diferente - Itálico</i></p> <!--melhor utilizar tag em ou dfn-->
+    <iframe src="https://www.w3.org/" frameborder="1" name="main"></iframe> <!--pode utilizar o sandbox para bloquear o iframe-->
+    <p><a href="https://code.visualstudio.com/" target="_blank"><img src="vscode-icon.png" alt="Ícone VSCode"></a></p>
+    <p> Exemplo de tag KBD: <kbd>CTRL+SHIFT+S</kbd> para salvar.</p>
+    <!--TAG link para CSS - Aula 53-->
+    <p><mark>TAG mark</mark></p>
+    <a href="https://artigos.nordresearch.com.br/" target="main">Artigos Nord</a>
+    <!--Tag meta - http-equiv e name - Aula 56-->
+    <p>
+        <meter value="9" max="10" min="0" high="8" low="2" optimum="5"></meter>
+    </p>
+    <nav>
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        <a href="https://www.cursoemvideo.com/" target="_blank">Site</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+    </nav>
+    <!--TAG noscript-->    
 </body>
 </html>
