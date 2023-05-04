@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas 61-74</title>
+    <script>
+        console.log(Math.PI);
+    </script>
+</head>
+<body>
+    <ol start="3" type="A" reversed> <!--orderes list-->
+        <li>HTML</li>
+        <ol>
+            <li>Introdução</li>
+            <li>Curso</li>
+            <li>Provas</li>
+        </ol>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+
+    <select name="" id="">
+        <optgroup label="WEB">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+        </optgroup>
+    </select>
+
+    <form action="" oninput="res.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" value="0">
+        <p>+</p>
+        <input type="number" id="b" value="0">
+        <p>=</p>
+        <output name="res" for="a b"></output>
+    </form>
+
+    <progress value="0" max="100" id="p1">22</progress> <!--caso não seja carregado, mostra o valor 22 entre as tags-->
+    <br>
+    <input type="range" min="0" max="100" value="0" onchange="p1.value=this.value">
+
+    <p><q>TAG Quote</q></p>
+
+    <ruby>Texto em JP<rt>Anotação do Texto</rt>Texto em JP</ruby> <!--utilizado para chinês/japonês-->
+
+    <!--TAG samp apresenta um resultado ou saída de um computador-->
+    <pre>
+        <code>console.log(Math.PI);</code>
+        <samp>3.141592653589793</samp>
+    </pre>
+
+    <article>
+        <section>
+            <h1>Exemplo</h1>
+            <p>Exemplo de article e section</p>
+        </section>
+    </article>
+
+    <p><small>Utilizado em textos de alerta adjacentes para dar um destaque.</small></p>
+
+    <picture>
+        <source media="(min-width:850px)" srcset="dan-droids.png">
+        <img src="dan-droids-pq.png" alt="">
+    </picture>
+
+    <p>Cursos de <span>Informática</span></p> <!--utilizado para aplicar uma formatação específica, sendo inline-->
+
+    <p><strong>TAG strong para destacar texto.</strong></p>
+
+    <!--TAG Style - Aula 73-->
+
+    <p>Tags <sub>sub</sub> e <sup>sup</sup></p>
+</body>
+</html>
